@@ -1,0 +1,9 @@
+repo: "github.com/nucleic/kiwi"
+ci_signer:
+  github_actions:
+    workflow: "Build and upload wheels"
+    artifacts:
+    - name: "artifact"
+      patterns: ["dist/*"]
+    require_succeeded:
+      job: "upload_pypi"
