@@ -1,0 +1,10 @@
+repo: "github.com/Julian/jsonschema"
+ci_signer:
+  github_actions:
+    workflow: "Packaging"
+    artifacts:
+    - name: "dist"
+      patterns: ["*"]
+    require_succeeded:
+      job: "build"
+      step: "Publish Package"
