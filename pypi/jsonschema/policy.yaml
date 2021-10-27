@@ -7,4 +7,4 @@ ci_signer:
       patterns: ["*"]
     require_succeeded:
       job: "build"
-      step: "Publish Package"
+      step: "Publish package"
