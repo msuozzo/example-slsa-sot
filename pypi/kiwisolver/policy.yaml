@@ -4,6 +4,6 @@ ci_signer:
     workflow: "Build and upload wheels"
     artifacts:
     - name: "artifact"
-      patterns: ["dist/*"]
+      patterns: ["*"]
     require_succeeded:
       job: "upload_pypi"
