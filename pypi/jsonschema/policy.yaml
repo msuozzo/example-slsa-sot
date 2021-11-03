@@ -1,5 +1,5 @@
 repo: "github.com/Julian/jsonschema"
-ci_signer:
+L3_build_monitor:
   github_actions:
     workflow: "Packaging"
     artifacts:
